@@ -2,9 +2,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
-  min-height: 20vh;
-  max-height: 36vh; }
+  height: 200px;
+  min-height: 10vh;
+  max-height: 20vh; }
 
 .column, .columns {
   padding-top: 1.5rem;
@@ -27,7 +27,8 @@ ul.pagination {
     background: #0a0a0a; }
 
 h1 a, h2 a, h3 a {
-  text-decoration: none; }
+#  text-decoration: none;
+}
 
 p.meta {
   font-size: 90%;
