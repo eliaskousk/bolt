@@ -3,9 +3,9 @@
 # Variables that are in this file, can be used in your twig template like {{ theme.foo }}
 
 layout:
-    aside: right # left, right, none
+    aside: none # left, right, none
     aside_width: 4 # out of 12
-    main_width: 8 # out of 12
+    main_width: 10 # out of 12
     variant: centered # wide or centered
 
 # Setting the header image. The default images in this theme all came from
