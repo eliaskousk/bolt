@@ -12,6 +12,7 @@ phpunit.xml
 theme/*
 !theme/base-*
 !theme/default
+theme/base-2016.backup/*
 
 # Unless you want to store vendor's "state" in your Git repo.
 composer.phar
