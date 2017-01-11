@@ -41,6 +41,8 @@
                 {% else %}
                     <p>{{ record.excerpt(300, false, search|default('')) }}</p>
                 {% endif %}
+                
+                <p><a href="{{ record.link }}">Read More</a></p>
 
                 {% include 'partials/_recordfooter.twig' with { 'record': record } %}
 

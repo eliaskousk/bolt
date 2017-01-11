@@ -9,12 +9,17 @@
         {# make sure we always display a proper title: The record's title if there is one, appended with the
            sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
         <title>
-            {%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
-                {{ app.config.get('general/sitename') -}}
-            {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif -%}
+            {% if seo.title() is defined %}
+                {{ seo.title() }}
+            {% elseif record.title is defined %}
+                {{ record.title|striptags }}
+            {% endif %}
         </title>
+        {{ seo.metatags() }}
+        <link rel="alternate" type="application/rss+xml" href="/rss/feed.xml" />
         <link rel="stylesheet" href="{{ asset('css/foundation.css', 'theme') }}">
         <link rel="stylesheet" href="{{ asset('css/theme.css', 'theme') }}">
+        <link rel="stylesheet" href="{{ asset('css/prism.css', 'theme') }}">
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans:700,700italic' rel='stylesheet' type='text/css'>
         {% block headincludes %}
         {% endblock headincludes %}
