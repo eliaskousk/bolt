@@ -15,4 +15,6 @@
 
     {% include 'partials/_recordfooter.twig' with { 'record': record, 'extended': true } %}
 
+    {{ disqus( record.title ) }}
+
 {% endblock main %}
