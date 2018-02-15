@@ -9,6 +9,7 @@ extensions/*
 thumbs/
 vendor/
 theme/*
+!theme/base-2016/
 composer.lock
 
 # Bolt development files
